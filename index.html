@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yh - プロフィール</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/status.css">
+    <link rel="stylesheet" href="https://2237yh.net/css/status.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+
+<script src="/js/status.js"></script>
+
+<body>
+
+    <header>
+        <a href="https://2237yh.net"><img src="/img/banner.png" alt="banner" class="banner" height="48"></a>
+        <p>何も無いよこんなところに</p>
+    </header>
+
+    <div class="page-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                 <img src="/img/icon.png" alt="icon" class="sidebar-icon">
+                 <h2>yh</h2>
+            </div>
+            <nav class="menu">
+                <a href="https://www.youtube.com/@2237yh" target="_blank" rel="noopener noreferrer" class="menu-item youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube：@2237yh</span>
+                </a>
+                <a href="https://x.com/2237yh" target="_blank" rel="noopener noreferrer" class="menu-item x">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter：@2237yh</span>
+                </a>
+                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
+                    <img src="/img/nicovideo_logo.png" alt="ニコニコ動画" class="social-icon-png">
+                    <span>ニコニコ動画</span>
+                </a>
+                <a href="https://github.com/yh2237" target="_blank" rel="noopener noreferrer" class="menu-item github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub：yh2237</span>
+                </a>
+                <a href="" class="menu-item discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord：@yh2237</span>
+                </a>
+
+                <hr>
+                
+                <div class="status-container" id="server-status-widget">
+                    <h1><a href="/status.html" class="server-status-index">- サーバーステータス</a></h1>
+                    <div class="status-item">
+                        <span class="label">CPU</span>
+                        <div class="bar"><div id="cpuBar" class="fill"></div></div>
+                        <span class="value" id="cpuValue">...</span>
+                    </div>
+
+                    <div class="status-item">
+                        <span class="label">RAM</span>
+                        <div class="bar"><div id="ramBar" class="fill"></div></div>
+                        <span class="value" id="ramValue">...</span>
+                    </div>
+                    
+                    <div class="status-item">
+                        <span class="label">NET</span>
+                        <div class="bar"><div id="netBar" class="fill"></div></div>
+                        <span class="value" id="netValue">...</span>
+                    </div>
+
+                    <div class="status-item">
+                        <span class="label">Disk I/O</span>
+                        <div class="bar"><div id="diskIoBar" class="fill"></div></div>
+                        <span class="value" id="diskIoValue">...</span>
+                    </div>
+                </div>
+
+            </nav>
+        </aside>
+
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="profile-container">
+                        <span class="github-url"><a href="https://github.com/yh2237/yh2237">yh2237</a> / <a href="https://github.com/yh2237/yh2237/blob/main/README.md">README.md</a></span>
+                        <p><b>I like making useless things</b></p>
+                        <p>
+                            <img src="https://img.shields.io/badge/Html5--E34F26.svg?logo=html5&style=plastic" alt="HTML5">
+                            <img src="https://img.shields.io/badge/javascript--F7DF1E.svg?logo=javascript&style=plastic" alt="JavaScript">
+                            <img src="https://img.shields.io/badge/Node.js--339933.svg?logo=node.js&style=plastic" alt="Node.js">
+                            <img src="https://img.shields.io/badge/C--659AD2.svg?logo=C&style=plastic" alt="C">
+                            <img src="https://img.shields.io/badge/Linux--FCC624.svg?logo=linux&style=plastic" alt="Linux">
+                            <img src="https://img.shields.io/badge/Proxmox_VE--DE6D00.svg?logo=proxmox&style=plastic" alt="Proxmox VE">
+                            ...etc
+                        </p>
+                </div>
+
+                <div class="profile-container">
+                    <main>
+                        <h3>- About Me</h3>
+                        <p>
+                            勘とノリでプログラムとサーバーいじってる人<br>
+                            たまに音MADとかも作る<br>
+                            一番好きなのはNodejs。Pythonはあまり好きじゃない、てか書けない
+                        </p>
+                    </main>
+                    <hr>
+                    <main>
+                        <h3>- About Server</h3>
+                        <ul>
+                            <li>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+                            <li>RAM：DDR4 32GB</li>
+                            <li>Storage：SATA SSD 1TB + HDD 1.5TB</li>
+                            <li>Network：2 × 1GbE Ethernet</li>
+                            <li>仮想基盤：Proxmox VE 8.3.0</li>
+                            <li>OS：Debian 13 （Headless）</li>
+                            <li>WebServer：nginx 1.26.3</li>
+                        </ul>
+                        <p>
+                            マイクラ鯖とTureNASを同時に動かしてると若干メモリが足りない気がする<br>
+                            128GB積みてぇ
+                        </p>
+                        <p>
+                            鯖につよつよグラボ積みたい<br>
+                            あとストレージをNVMeにしたい<br>
+                            それと回線も10G引きたい<br>
+                            <p>でもお金がない (っ◞‸◟c)
+                        </p>
+                    </main>
+                    <hr>
+                    <main>
+                        <h3>- My Projects</h3>
+                        <ul>
+                            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">ランダム足立語録</a> - 足立レイのツイートをランダムに表示するサイト</li>
+                            <li><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a> - ランダム足立語録のバックエンドとデータベース</li>
+                            <li><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a> - REAPERのタイムライン上に動画を描画するツール</li>
+                    </main>
+                    <footer>
+                        <p>&copy; 2025 yh</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
