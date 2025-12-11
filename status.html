@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yh - プロフィール</title>
+    <title>2237yh.net - サーバーステータス</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/status.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -16,16 +16,23 @@
 <body>
 
     <header>
-        <a href="https://2237yh.net"><img src="/img/banner.png" alt="banner" class="banner" height="48"></a>
-        <p>何も無いよこんなところに</p>
+        <div style="margin-top:0.5rem;">
+            <a href="https://2237yh.net"><img src="img/banner.png" alt="banner" class="banner" height="48"></a>
+        </div>
+        <ul class="top-right-list" role="navigation" aria-label="Header actions">
+            <li><a href="/index.html">TOP</a></li>
+            <li><a href="/status.html" target="_blank" rel="noopener noreferrer">サーバーステータス</a></li>
+            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
+            <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+        </ul>
     </header>
 
     <div class="page-wrapper">
-        
+
         <aside class="sidebar">
             <div class="sidebar-header">
-                 <img src="/img/icon.png" alt="icon" class="sidebar-icon">
-                 <h2>yh</h2>
+                <img src="/img/icon.png" alt="icon" class="sidebar-icon">
+                <h2>yh</h2>
             </div>
             <nav class="menu">
                 <a href="https://www.youtube.com/@2237yh" target="_blank" rel="noopener noreferrer" class="menu-item youtube">
@@ -36,17 +43,17 @@
                     <i class="fab fa-twitter"></i>
                     <span>Twitter：@2237yh</span>
                 </a>
-                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
-                    <img src="/img/nicovideo_logo.png" alt="ニコニコ動画" class="social-icon-png">
-                    <span>ニコニコ動画</span>
-                </a>
                 <a href="https://github.com/yh2237" target="_blank" rel="noopener noreferrer" class="menu-item github">
                     <i class="fab fa-github"></i>
                     <span>GitHub：yh2237</span>
                 </a>
-                <a href="" class="menu-item discord">
+                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
+                    <img src="/img/nicovideo_logo.png" alt="ニコニコ動画" class="social-icon-png">
+                    <span>ニコニコ動画</span>
+                </a>
+                <a href="https://discord.gg/YsV9ShFSJz" class="menu-item discord">
                     <i class="fab fa-discord"></i>
-                    <span>Discord：@yh2237</span>
+                    <span>Discord</span>
                 </a>
 
             </nav>
@@ -64,13 +71,13 @@
                                 <div class="bar"><div id="cpuBar" class="fill"></div></div>
                                 <span class="value" id="cpuValue">...</span>
                             </div>
-                            
+
                             <div class="status-item">
                                 <span class="label">RAM</span>
                                 <div class="bar"><div id="ramBar" class="fill"></div></div>
                                 <span class="value" id="ramValue">...</span>
                             </div>
-                            
+
                             <div class="status-item">
                                 <span class="label">NET</span>
                                 <div class="bar"><div id="netBar" class="fill"></div></div>
@@ -87,7 +94,7 @@
                         <ul class="server-status-ul">
                             <li>CPU: Xeon E5-2690 V3 / 12 cores, 24 threads</li>
                             <li>RAM: DDR4 32GB</li>
-                            <li>Storage: SATA SSD 1TB + HDD 1.5TB</li>
+                            <li>Storage: SATA SSD 1TB + HDD 2.5TB</li>
                             <li>Network: 2 × 1GbE Ethernet</li>
                             <li>Virtualization Platform: Proxmox VE 8.3.0</li>
                             <li>OS: Debian 13 (Headless)</li>
