@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yh - プロフィール</title>
+    <title>2237yh.net - プロフィール</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/status.css">
     <link rel="stylesheet" href="https://2237yh.net/css/status.css">
@@ -17,16 +17,23 @@
 <body>
 
     <header>
-        <a href="https://2237yh.net"><img src="/img/banner.png" alt="banner" class="banner" height="48"></a>
-        <p>何も無いよこんなところに</p>
+        <div style="margin-top:0.5rem;">
+            <a href="https://2237yh.net"><img src="/img/banner.png" alt="banner" class="banner" height="48"></a>
+        </div>
+        <ul class="top-right-list" role="navigation" aria-label="Header actions">
+            <li><a href="/index.html">TOP</a></li>
+            <li><a href="/status.html" target="_blank" rel="noopener noreferrer">サーバーステータス</a></li>
+            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
+            <li><a href="/contact.html" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+        </ul>
     </header>
 
     <div class="page-wrapper">
-        
+
         <aside class="sidebar">
             <div class="sidebar-header">
-                 <img src="/img/icon.png" alt="icon" class="sidebar-icon">
-                 <h2>yh</h2>
+                <img src="/img/icon.png" alt="icon" class="sidebar-icon">
+                <h2>yh</h2>
             </div>
             <nav class="menu">
                 <a href="https://www.youtube.com/@2237yh" target="_blank" rel="noopener noreferrer" class="menu-item youtube">
@@ -37,21 +44,21 @@
                     <i class="fab fa-twitter"></i>
                     <span>Twitter：@2237yh</span>
                 </a>
-                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
-                    <img src="/img/nicovideo_logo.png" alt="ニコニコ動画" class="social-icon-png">
-                    <span>ニコニコ動画</span>
-                </a>
                 <a href="https://github.com/yh2237" target="_blank" rel="noopener noreferrer" class="menu-item github">
                     <i class="fab fa-github"></i>
                     <span>GitHub：yh2237</span>
                 </a>
-                <a href="" class="menu-item discord">
+                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
+                    <img src="/img/nicovideo_logo.png" alt="ニコニコ動画" class="social-icon-png">
+                    <span>ニコニコ動画</span>
+                </a>
+                <a href="https://discord.gg/YsV9ShFSJz" class="menu-item discord">
                     <i class="fab fa-discord"></i>
-                    <span>Discord：@yh2237</span>
+                    <span>Discord</span>
                 </a>
 
                 <hr>
-                
+
                 <div class="status-container" id="server-status-widget">
                     <h1><a href="/status.html" class="server-status-index">- サーバーステータス</a></h1>
                     <div class="status-item">
@@ -65,7 +72,7 @@
                         <div class="bar"><div id="ramBar" class="fill"></div></div>
                         <span class="value" id="ramValue">...</span>
                     </div>
-                    
+
                     <div class="status-item">
                         <span class="label">NET</span>
                         <div class="bar"><div id="netBar" class="fill"></div></div>
@@ -103,8 +110,8 @@
                         <h3>- About Me</h3>
                         <p>
                             勘とノリでプログラムとサーバーいじってる人<br>
+                            少女終末旅行と足立レイが好き<br>
                             たまに音MADとかも作る<br>
-                            一番好きなのはNodejs。Pythonはあまり好きじゃない、てか書けない
                         </p>
                     </main>
                     <hr>
@@ -113,30 +120,28 @@
                         <ul>
                             <li>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
                             <li>RAM：DDR4 32GB</li>
-                            <li>Storage：SATA SSD 1TB + HDD 1.5TB</li>
+                            <li>Storage：SATA SSD 1TB + HDD 2.5TB</li>
                             <li>Network：2 × 1GbE Ethernet</li>
                             <li>仮想基盤：Proxmox VE 8.3.0</li>
                             <li>OS：Debian 13 （Headless）</li>
                             <li>WebServer：nginx 1.26.3</li>
                         </ul>
                         <p>
-                            マイクラ鯖とTureNASを同時に動かしてると若干メモリが足りない気がする<br>
-                            128GB積みてぇ
-                        </p>
-                        <p>
                             鯖につよつよグラボ積みたい<br>
                             あとストレージをNVMeにしたい<br>
                             それと回線も10G引きたい<br>
-                            <p>でもお金がない (っ◞‸◟c)
+                            <p>
+                                でもお金がない (っ◞‸◟c)
+                            </p>
                         </p>
                     </main>
                     <hr>
                     <main>
                         <h3>- My Projects</h3>
                         <ul>
-                            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">ランダム足立語録</a> - 足立レイのツイートをランダムに表示するサイト</li>
-                            <li><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a> - ランダム足立語録のバックエンドとデータベース</li>
-                            <li><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a> - REAPERのタイムライン上に動画を描画するツール</li>
+                            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a> - 足立レイのツイートが全てまとめられたサイト</li>
+                            <li><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a> - 足立データベースのソースコード</li>
+                            <li><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a> - REAPERのタイムライン上に映像を描画するツール</li>
                     </main>
                     <footer>
                         <p>&copy; 2025 yh</p>
