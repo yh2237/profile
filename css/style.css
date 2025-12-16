@@ -193,6 +193,15 @@ a:hover {
     box-sizing: border-box;
 }
 
+.container {
+    background-color: #161b22;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .profile-image {
     display: none;
 }
@@ -269,7 +278,7 @@ hr {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
     header {
         height: auto;
         padding: 0.8rem;
