@@ -15,7 +15,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    background-color: #010409;
+    background-color: #0d1117;
     margin: 0;
     color: #e6edf3;
 }
@@ -59,7 +59,7 @@ header p {
 }
 
 a {
-    color: #28f1e7;
+    color: #28F1E7;
     text-decoration: none;
 }
 
@@ -75,15 +75,14 @@ a:hover {
 }
 
 .sidebar {
+    width: 300px;
     background-color: #161b22;
-    border-radius: 6px;
-    border: 1px solid #30363d;
+    border-right: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
     padding: 16px 32px;
     box-sizing: border-box;
-    width: 300px;
-    margin: 32px;
-    margin-right: 0px;
-    margin-bottom: 80px;
+    color: #e6edf3;
 }
 
 .sidebar-header {
@@ -97,7 +96,6 @@ a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 16px;
-    text-align: center;
     border: 2px solid #2f81f7;
 }
 
@@ -126,7 +124,7 @@ a:hover {
     align-items: center;
     padding: 10px 12px;
     border-radius: 6px;
-    font-size: 90%;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     color: #8b949e;
@@ -141,7 +139,7 @@ a:hover {
 .menu-item i {
     margin-right: 20px;
     font-size: 1.4em;
-    width: 18px;
+    width: 24px;
     text-align: center;
     color: #8b949e;
 }
@@ -256,10 +254,6 @@ hr {
     color: #8b949e;
 }
 
-body.menu-open {
-    overflow: hidden;
-}
-
 @media (max-width: 768px) {
     .mobile-only {
         display: block;
@@ -269,8 +263,25 @@ body.menu-open {
         flex-direction: column;
     }
 
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+
     .content {
         padding: 16px;
+    }
+
+    .content-wrapper {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 0.8rem;
     }
 
     .brand {
@@ -282,64 +293,5 @@ body.menu-open {
     .top-right-list {
         position: static;
         flex-wrap: wrap;
-    }
-
-    .sidebar {
-        transform: translateX(-100%);
-        will-change: transform;
-    }
-
-    .menu-button {
-        display: inline-block;
-        background-color: #161b22;
-        border-radius: 6px;
-        border: 1px solid #30363d;
-        padding: 24px;
-        box-sizing: border-box;
-        width: calc(100% - 32px);
-        margin-left: 16px;
-        margin-right: 16px;
-        margin-top: 16px;
-        color: #e6edf3;
-    }
-
-    .menu-button:hover {
-        background-color: #2b323e;
-    }
-
-    .overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.25s;
-        z-index: 1000;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-        border-radius: 0;
-        width: 280px;
-        height: 100vh;
-        background: #161b22;
-        border-right: 1px solid #30363d;
-        transform: translateX(-100%);
-        transition: transform 0.25s ease;
-        z-index: 1050;
-        padding: 24px;
-        box-sizing: border-box;
-    }
-
-    .sidebar.open {
-        transform: translateX(0);
-    }
-
-    .overlay.open {
-        opacity: 1;
-        pointer-events: auto;
     }
 }
