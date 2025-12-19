@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'x14y24pxHeadUpDaisy';
+  src: url('font/x14y24pxHeadUpDaisy.ttf') format('ftruetype');
+}
+
+.server-status-title {
+  font-family: 'x14y24pxHeadUpDaisy';
+  font-size: 200%;
+  margin-bottom: 10px;
+}
+
+.server-status-index {
+  font-family: 'x14y24pxHeadUpDaisy';
+  font-size: 80%;
+  align-items: center;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.server-status-h3 {
+  font-family: 'x14y24pxHeadUpDaisy';
+  font-size: 120%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.server-status-ul li {
+  font-family: 'x14y24pxHeadUpDaisy';
+  font-size: 90%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.status-container {
+  margin-top: 20px;
+  font-family: 'x14y24pxHeadUpDaisy';
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.status-item .label {
+  font-family: 'x14y24pxHeadUpDaisy';
+  flex: 0 0 40px;
+  font-weight: 600;
+  font-size: 85%;
+  color: #cbd5e1;
+}
+
+.status-item .bar {
+  flex: 1 1 auto;
+  height: 12px;
+  background: #374151;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.status-item .fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28F1E7, #beff7d);
+  width: 0%;
+  transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 6px;
+}
+
+.status-item .value {
+  font-family: 'x14y24pxHeadUpDaisy';
+  flex: 5px;
+  margin-left: 15px;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+  color: #e5e7eb;
+  font-weight: 50;
+  font-size: 80%;
+}
