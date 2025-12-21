@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2237yh.net - サーバーステータス</title>
+    <title>2237yh.net - お問い合わせ</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/status.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,7 +15,7 @@
 
     <header>
         <div style="margin-top:0.5rem;">
-            <a href="https://2237yh.net"><img src="img/banner.png" alt="banner" class="banner" height="48"></a>
+            <a href="https://2237yh.net"><img src="img/banner2.png" alt="banner" class="banner" height="48"></a>
         </div>
         <ul class="top-right-list" role="navigation" aria-label="Header actions">
             <li><a href="index.html">TOP</a></li>
@@ -54,49 +54,47 @@
                     <span>Discord</span>
                 </a>
 
+                <hr>
+
+                <div class="status-container" id="server-status-widget">
+                    <h1><a href="status.html" class="server-status-index">- サーバーステータス</a></h1>
+                    <div class="status-item">
+                        <span class="label">CPU</span>
+                        <div class="bar"><div id="cpuBar" class="fill"></div></div>
+                        <span class="value" id="cpuValue">...</span>
+                    </div>
+
+                    <div class="status-item">
+                        <span class="label">RAM</span>
+                        <div class="bar"><div id="ramBar" class="fill"></div></div>
+                        <span class="value" id="ramValue">...</span>
+                    </div>
+
+                    <div class="status-item">
+                        <span class="label">NET</span>
+                        <div class="bar"><div id="netBar" class="fill"></div></div>
+                        <span class="value" id="netValue">...</span>
+                    </div>
+
+                    <div class="status-item">
+                        <span class="label">Disk I/O</span>
+                        <div class="bar"><div id="diskIoBar" class="fill"></div></div>
+                        <span class="value" id="diskIoValue">...</span>
+                    </div>
+                </div>
             </nav>
         </aside>
 
         <div class="content">
             <div class="content-wrapper">
-
-                <div class="container">
+                <div class="profile-container">
                     <main>
-                        <h1 class="server-status-title">2237yh.net - サーバーステータス</h1>
-                        <div class="status-container" id="server-status-widget">
-                            <div class="status-item">
-                                <span class="label">CPU</span>
-                                <div class="bar"><div id="cpuBar" class="fill"></div></div>
-                                <span class="value" id="cpuValue">...</span>
-                            </div>
-
-                            <div class="status-item">
-                                <span class="label">RAM</span>
-                                <div class="bar"><div id="ramBar" class="fill"></div></div>
-                                <span class="value" id="ramValue">...</span>
-                            </div>
-
-                            <div class="status-item">
-                                <span class="label">NET</span>
-                                <div class="bar"><div id="netBar" class="fill"></div></div>
-                                <span class="value" id="netValue">...</span>
-                            </div>
-
-                            <div class="status-item">
-                                <span class="label">Disk I/O</span>
-                                <div class="bar"><div id="diskIoBar" class="fill"></div></div>
-                                <span class="value" id="diskIoValue">...</span>
-                            </div>
-                        </div>
-                        <h3 class="server-status-h3">- About Server</h3>
-                        <ul class="server-status-ul">
-                            <li>CPU: Xeon E5-2690 V3 / 12 cores, 24 threads</li>
-                            <li>RAM: DDR4 32GB</li>
-                            <li>Storage: SATA SSD 1TB + HDD 2.5TB</li>
-                            <li>Network: 2 × 1GbE Ethernet</li>
-                            <li>Virtualization Platform: Proxmox VE 8.3.0</li>
-                            <li>OS: Debian 13 (Headless)</li>
-                            <li>WebServer: nginx 1.26.3</li>
+                        <h3>- Contact</h3>
+                        <p>お問い合わせは以下のDMかEmailまでお願いいたします。（Emailの返事には時間がかかる可能性があります）</p>
+                        <ul>
+                            <li>Twitter：<a href="https://x.com/2237yh" target="_blank" rel="noopener noreferrer">@2237yh</a></li>
+                            <li>Discord：yh2237</li>
+                            <li>Email：<a href="mailto:yh@2237yh.net">yh@2237yh.net</a>
                         </ul>
                     </main>
 
