@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0yh.dev - プロフィール</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/status.css">
-    <link rel="stylesheet" href="https://0yh.dev/css/status.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
@@ -15,20 +13,22 @@
 <body>
 
     <header>
-        <div style="margin-top:0.5rem;">
-            <a href="https://0yh.dev/"><img src="img/banner2.png" alt="banner" class="banner" height="48"></a>
-        </div>
-        <ul class="top-right-list" role="navigation" aria-label="Header actions">
-            <li><a href="index.html">TOP</a></li>
-            <li><a href="status.html" target="_blank" rel="noopener noreferrer">サーバーステータス</a></li>
-            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-            <li><a href="contact.html" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
-        </ul>
+         <div class="banner-container">
+             <a href="https://0yh.dev/"><img src="img/banner2.png" alt="banner" class="banner" height="48"></a>
+         </div>
+         <div class="header-right">
+            <ul class="top-right-list" role="navigation" aria-label="Header actions">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="status.html" target="_blank" rel="noopener noreferrer">サーバーステータス</a></li>
+                <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+            </ul>
+            <button id="menuButton" class="menu-button mobile-only" aria-label="Menu"><i class="fas fa-bars"></i></button>
+         </div>
     </header>
 
     <div class="page-wrapper">
 
-        <button id="menuButton" class="menu-button mobile-only">サイドバーを表示</button>
         <div id="overlay" class="overlay mobile-only"></div>
 
         <aside id="sidebar" class="sidebar">
@@ -95,7 +95,7 @@
                 <div class="profile-container">
                         <span class="github-url"><a href="https://github.com/yh2237/yh2237">yh2237</a> / <a href="https://github.com/yh2237/yh2237/blob/main/README.md">README.md</a></span>
                         <p><b>I like making useless things</b></p>
-                        <p>
+                        <div class="tech-stack">
                             <img src="https://img.shields.io/badge/Html5--E34F26.svg?logo=html5&style=plastic" alt="HTML5">
                             <img src="https://img.shields.io/badge/javascript--F7DF1E.svg?logo=javascript&style=plastic" alt="JavaScript">
                             <img src="https://img.shields.io/badge/Node.js--339933.svg?logo=node.js&style=plastic" alt="Node.js">
@@ -103,46 +103,49 @@
                             <img src="https://img.shields.io/badge/Linux--FCC624.svg?logo=linux&style=plastic" alt="Linux">
                             <img src="https://img.shields.io/badge/Proxmox_VE--DE6D00.svg?logo=proxmox&style=plastic" alt="Proxmox VE">
                             ...etc
-                        </p>
+                        </div>
                 </div>
 
                 <div class="container">
                     <main>
-                        <h3>- About Me</h3>
-                        <p>
-                            勘とノリでサーバーとプログラムをこねくり回してる人<br>
-                            少女終末旅行と足立レイが好き<br>
-                            たまに音MADとかも作る<br>
-                        </p>
-                    </main>
-                    <hr>
-                    <main>
-                        <h3>- About Server</h3>
-                        <ul>
-                            <li>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
-                            <li>RAM：DDR4 32GB</li>
-                            <li>Storage：SATA SSD 1TB + HDD 2.5TB</li>
-                            <li>Network：2 × 1GbE Ethernet</li>
-                            <li>仮想基盤：Proxmox VE 8.3.0</li>
-                            <li>OS：Debian 13 （Headless）</li>
-                            <li>WebServer：nginx 1.26.3</li>
-                        </ul>
-                        <p>
-                            鯖につよつよグラボ積みたい<br>
-                            あとストレージをNVMeにしたい<br>
-                            それと回線も10G引きたい<br>
+                        <section>
+                            <h3>- About Me</h3>
                             <p>
-                                でもお金がない (っ◞‸◟c)
+                                勘とノリでサーバーとプログラムをこねくり回してる人<br>
+                                少女終末旅行と足立レイが好き<br>
+                                たまに音MADとかも作る<br>
                             </p>
-                        </p>
-                    </main>
-                    <hr>
-                    <main>
-                        <h3>- My Projects</h3>
-                        <ul>
-                            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a> - 足立レイのツイートが全てまとめられたサイト</li>
-                            <li><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a> - 足立データベースのソースコード</li>
-                            <li><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a> - REAPERのタイムライン上に映像を描画するツール</li>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>- About Server</h3>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-microchip"></i></span>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+                                <li><span class="fa-li"><i class="fas fa-memory"></i></span>RAM：DDR4 32GB</li>
+                                <li><span class="fa-li"><i class="fas fa-hdd"></i></span>Storage：SATA SSD 1TB + HDD 2.5TB</li>
+                                <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>Network：2 × 1GbE Ethernet</li>
+                                <li><span class="fa-li"><i class="fas fa-server"></i></span>仮想基盤：Proxmox VE 8.3.0</li>
+                                <li><span class="fa-li"><i class="fab fa-linux"></i></span>OS：Debian 13 （Headless）</li>
+                                <li><span class="fa-li"><i class="fas fa-globe"></i></span>WebServer：nginx 1.26.3</li>
+                            </ul>
+                            <p>
+                                鯖につよつよグラボ積みたい<br>
+                                あとストレージをNVMeにしたい<br>
+                                それと回線も10G引きたい<br>
+                                <p>
+                                    でもお金がない (っ◞‸◟c)
+                                </p>
+                            </p>
+                        </section>
+                        <hr>
+                        <section>
+                            <h3>- My Projects</h3>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-database"></i></span><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a> - 足立レイのツイートが全てまとめられたサイト</li>
+                                <li><span class="fa-li"><i class="fas fa-code"></i></span><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a> - 足立データベースのソースコード</li>
+                                <li><span class="fa-li"><i class="fas fa-file-video"></i></span><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a> - REAPERのタイムライン上に映像を描画するツール</li>
+                            </ul>
+                        </section>
                     </main>
                     <footer>
                         <p>&copy; 2025 yh</p>
