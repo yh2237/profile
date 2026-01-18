@@ -197,7 +197,14 @@ header {
 .menu-item i {
     margin-right: 20px;
     font-size: 1.4em;
-    width: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+.iconify {
+    margin-right: 20px;
+    font-size: 1.4em;
+    width: 20px;
     text-align: center;
 }
 
