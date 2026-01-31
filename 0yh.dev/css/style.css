@@ -191,7 +191,7 @@ header {
     align-items: center;
     padding: 10px 12px;
     border-radius: 6px;
-    font-size: 90%;
+    font-size: 95%;
     font-weight: 500;
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -251,11 +251,17 @@ header {
     padding: 24px;
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    font-size: 100%;
 }
 
 .profile-container,
-.container .github {
+.github-readme {
     font-family: "Inter", "sans-serif";
+}
+
+.profile-container,
+.contact {
+    font-family: "WDXLLubrifontJPN", "sans-serif";
 }
 
 h3 {
