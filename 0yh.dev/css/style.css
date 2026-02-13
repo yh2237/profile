@@ -252,11 +252,30 @@ header {
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     font-size: 100%;
+    overflow: hidden;
 }
 
 .profile-container,
 .github-readme {
     font-family: "Inter", "sans-serif";
+}
+
+.github-readme {
+    overflow-x: auto;
+}
+
+.github-readme img {
+    max-width: 100%;
+    height: auto;
+}
+
+.github-readme pre {
+    overflow-x: auto;
+}
+
+.github-readme table {
+    display: block;
+    overflow-x: auto;
 }
 
 .profile-container,
@@ -369,6 +388,10 @@ footer {
 }
 
 .mobile-only {
+    display: none;
+}
+
+.mobile-nav {
     display: none;
 }
 
@@ -531,6 +554,45 @@ h3::after {
 
     .top-right-list {
         display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        position: sticky;
+        top: 57px;
+        z-index: 999;
+        background-color: rgba(22, 27, 34, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-color);
+        padding: 8px 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        gap: 4px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    .mobile-nav ul li a {
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        font-family: "WDXLLubrifontJPN", sans-serif;
+        color: var(--secondary-text-color);
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .mobile-nav ul li a:hover {
+        background-color: var(--menu-item-hover-bg);
+        color: var(--primary-text-color);
+        text-decoration: none;
     }
 
     .mobile-only,
