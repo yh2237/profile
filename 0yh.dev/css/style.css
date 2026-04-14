@@ -1,60 +1,82 @@
 @font-face {
     font-family: "Proxima Nova";
-    src: url(../font/proxima-nova.otf) format("otf");
+    src: url("../font/proxima-nova.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Corporate";
-    src: url(../font/Corporate-Logo-Medium-ver3.otf) format("otf");
+    src: url("../font/Corporate-Logo-Medium-ver3.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "x14y24pxHeadUpDaisy";
     src: url("../font/x14y24pxHeadUpDaisy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "WDXLLubrifontJPN";
     src: url("../font/WDXLLubrifontJPN-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("../font/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
 }
 
 :root {
-    --background-color: #010409;
-    --primary-text-color: #e6edf3;
-    --secondary-text-color: #8b949e;
-    --border-color: #30363d;
-    --container-background: #161b22;
-    --link-color: #28f1e7;
-    --link-hover-color: #beff7d;
-    --button-hover-bg: #2b323e;
-    --header-bg: #010409;
-    --sidebar-bg: #161b22;
-    --icon-border-color: #2f81f7;
-    --menu-item-hover-bg: #2b323e;
-    --status-bar-bg: #374151;
-    --status-bar-fill: linear-gradient(90deg, #28f1e7, #beff7d);
+    --background-color: #c9cfd8;
+    --primary-text-color: #1b222c;
+    --secondary-text-color: #38465b;
+    --border-color: #6a7788;
+    --container-background: #e7ebf2;
+    --link-color: #0039b5;
+    --link-hover-color: #8d0000;
+    --button-hover-bg: #d5dbe6;
+    --header-bg: #bfc7d4;
+    --sidebar-bg: #dfe5ee;
+    --icon-border-color: #2b4f8f;
+    --menu-item-hover-bg: #d3d9e4;
+    --status-bar-bg: #b7c0cd;
+    --status-bar-fill: linear-gradient(90deg, #2a8f2a, #7bc47b);
 }
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     font-family: "WDXLLubrifontJPN", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "MS PGothic", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji";
     background-color: var(--background-color);
-    background-image: linear-gradient(rgba(48, 54, 61, 0.2) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(48, 54, 61, 0.2) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15) 0,
+        rgba(255, 255, 255, 0.15) 1px,
+        transparent 1px,
+        transparent 4px
+    );
     margin: 0;
     color: var(--primary-text-color);
-    animation: bg-scroll 20s linear infinite;
     letter-spacing: 1px;
 }
 
@@ -83,13 +105,12 @@ body.menu-open {
 
 a {
     color: var(--link-color);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--link-hover-color);
-    transition: color 0.3s ease;
 }
 
 hr {
@@ -101,10 +122,11 @@ hr {
 header {
     background-color: var(--header-bg);
     padding: 16px 32px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid #8d99aa;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: inset 0 1px 0 #f8fbff;
 }
 
 .banner-container {
@@ -130,13 +152,15 @@ header {
     display: inline-block;
     padding: 0.4rem 0.6rem;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 2px;
+    border: 1px solid transparent;
     font-size: 0.95rem;
     font-family: "WDXLLubrifontJPN", sans-serif;
 }
 
 .top-right-list li a:hover {
-    background: #141b28;
+    background: #e8edf5;
+    border-color: #8a97aa;
 }
 
 .page-wrapper {
@@ -146,14 +170,14 @@ header {
 
 .sidebar {
     background-color: var(--sidebar-bg);
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px solid var(--border-color);
     padding: 16px 32px;
     width: 300px;
     margin: 32px;
     margin-right: 0;
     height: fit-content;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 0 #f9fbff, 2px 2px 0 #9ca7b7;
 }
 
 .sidebar-header {
@@ -168,6 +192,7 @@ header {
     object-fit: cover;
     margin-bottom: 16px;
     border: 2px solid var(--icon-border-color);
+    box-shadow: 0 0 0 2px #f5f8fd;
 }
 
 .sidebar-header h2 {
@@ -190,19 +215,19 @@ header {
     display: flex;
     align-items: center;
     padding: 10px 12px;
-    border-radius: 6px;
+    border-radius: 2px;
     font-size: 95%;
     font-weight: 500;
     text-decoration: none;
     color: var(--secondary-text-color);
-    transition: background-color 0.2s ease, color 0.2s ease;
+    border: 1px solid transparent;
 }
 
 .menu-item:hover {
     background-color: var(--menu-item-hover-bg);
     color: var(--primary-text-color);
     text-decoration: none;
-    transform: translateX(5px);
+    border-color: #8a97aa;
 }
 
 .menu-item i {
@@ -246,11 +271,11 @@ header {
 .container {
     font-family: "WDXLLubrifontJPN", sans-serif;
     background-color: var(--container-background);
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px solid var(--border-color);
     padding: 24px;
     width: 100%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 0 #f9fbff, 2px 2px 0 #9ca7b7;
     font-size: 100%;
     overflow: hidden;
 }
@@ -289,7 +314,7 @@ h3 {
     font-weight: 600;
     margin: 0 0 16px 0;
     color: var(--primary-text-color);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid #9ba7b8;
     padding-bottom: 8px;
     position: relative;
 }
@@ -299,10 +324,9 @@ h3::after {
     position: absolute;
     bottom: -1px;
     left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--link-color);
-    border-radius: 2px;
+    width: 48px;
+    height: 2px;
+    background: #2f4f84;
 }
 
 p {
@@ -318,12 +342,12 @@ p {
 .github-url a {
     font-size: 70%;
     font-weight: 400;
-    color: #cccfd2;
+    color: #4d5f7f;
 }
 
 .github-url a:hover {
     text-decoration: underline;
-    color: #1f8fff;
+    color: #8d0000;
 }
 
 footer {
@@ -356,16 +380,16 @@ footer {
     flex: 0 0 40px;
     font-weight: 600;
     font-size: 85%;
-    color: #cbd5e1;
+    color: #2e3c53;
 }
 
 .status-item .bar {
     flex: 1 1 auto;
     height: 12px;
     background: var(--status-bar-bg);
-    border-radius: 5px;
+    border-radius: 2px;
     overflow: hidden;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8d99aa;
 }
 
 .status-item .fill {
@@ -373,7 +397,7 @@ footer {
     background: var(--status-bar-fill);
     width: 0%;
     transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 .status-item .value {
@@ -383,7 +407,7 @@ footer {
     margin-left: 15px;
     text-align: left;
     font-variant-numeric: tabular-nums;
-    color: #e5e7eb;
+    color: #233147;
     font-size: 80%;
 }
 
@@ -398,7 +422,7 @@ footer {
 .menu-button {
     display: none;
     background-color: var(--container-background);
-    border-radius: 6px;
+    border-radius: 2px;
     border: 1px solid var(--border-color);
     padding: 16px;
     width: calc(100% - 32px);
@@ -415,7 +439,7 @@ footer {
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(35, 44, 58, 0.45);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s;
@@ -448,12 +472,10 @@ footer {
 
 .tech-stack img {
     height: 24px;
-    transition: transform 0.2s ease;
 }
 
 .tech-stack img:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.1);
+    filter: saturate(1.1);
 }
 
 @keyframes fadeInUp {
@@ -469,12 +491,12 @@ footer {
 }
 
 .sidebar {
-    animation: fadeInUp 0.6s ease-out forwards;
+    animation: fadeInUp 0.45s ease-out forwards;
     opacity: 0;
 }
 
 .content {
-    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+    animation: fadeInUp 0.45s ease-out 0.1s forwards;
     opacity: 0;
 }
 
@@ -509,22 +531,9 @@ footer {
     }
 }
 
-.status-item .fill {
-    animation: pulse-glow 3s infinite ease-in-out;
-}
-
+.status-item .fill,
 h3::after {
-    animation: pulse-line 4s infinite ease-in-out;
-}
-
-@keyframes bg-scroll {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 50px 50px;
-    }
+    animation: none;
 }
 
 .fa-ul {
@@ -544,8 +553,7 @@ h3::after {
         position: sticky;
         top: 0;
         z-index: 1000;
-        background-color: rgba(1, 4, 9, 0.9);
-        backdrop-filter: blur(10px);
+        background-color: #bfc7d4;
     }
 
     .banner {
@@ -561,8 +569,7 @@ h3::after {
         position: sticky;
         top: 57px;
         z-index: 999;
-        background-color: rgba(22, 27, 34, 0.95);
-        backdrop-filter: blur(10px);
+        background-color: #dce3ec;
         border-bottom: 1px solid var(--border-color);
         padding: 8px 16px;
         overflow-x: auto;
@@ -585,14 +592,15 @@ h3::after {
         font-family: "WDXLLubrifontJPN", sans-serif;
         color: var(--secondary-text-color);
         text-decoration: none;
-        border-radius: 4px;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        border-radius: 2px;
+        border: 1px solid transparent;
     }
 
     .mobile-nav ul li a:hover {
         background-color: var(--menu-item-hover-bg);
         color: var(--primary-text-color);
         text-decoration: none;
+        border-color: #8a97aa;
     }
 
     .mobile-only,
@@ -602,7 +610,7 @@ h3::after {
 
     .menu-button {
         background: transparent;
-        border: none;
+        border: 1px solid #8d99aa;
         color: var(--primary-text-color);
         font-size: 1.5rem;
         padding: 8px;
@@ -612,8 +620,8 @@ h3::after {
     }
 
     .menu-button:hover {
-        background: transparent;
-        color: var(--link-color);
+        background: #e8edf5;
+        color: #233147;
     }
 
     .page-wrapper {
@@ -635,12 +643,11 @@ h3::after {
         animation: none;
         opacity: 1;
         transform: translateX(-100%);
-        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.2s ease-out;
         z-index: 1100;
         padding: 24px;
         overflow-y: auto;
-        background-color: rgba(22, 27, 34, 0.95);
-        backdrop-filter: blur(10px);
+        background-color: #dfe5ee;
     }
 
     .sidebar.open {

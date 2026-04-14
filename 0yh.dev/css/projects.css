@@ -5,7 +5,7 @@
     padding: 32px;
     gap: 32px;
     min-height: calc(100vh - 83px);
-    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+    animation: fadeInUp 0.45s ease-out 0.1s forwards;
     opacity: 0;
 }
 
@@ -16,10 +16,10 @@
     width: 280px;
     flex-shrink: 0;
     background-color: var(--container-background);
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px solid var(--border-color);
     padding: 24px 28px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 0 #f9fbff, 2px 2px 0 #9ca7b7;
 }
 
 .projects-toc h3 {
@@ -42,15 +42,16 @@
     font-size: 0.95rem;
     color: var(--secondary-text-color);
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 2px;
     border-left: 2px solid transparent;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    border: 1px solid transparent;
 }
 
 .projects-toc ul li a:hover {
     background-color: var(--menu-item-hover-bg);
     color: var(--primary-text-color);
     border-left-color: var(--link-color);
+    border-color: #8a97aa;
     text-decoration: none;
 }
 
@@ -62,12 +63,18 @@
     gap: 24px;
 }
 
+#projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .project-card {
     background-color: var(--container-background);
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px solid var(--border-color);
     padding: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 0 #f9fbff, 2px 2px 0 #9ca7b7;
     scroll-margin-top: 100px;
 }
 
@@ -78,13 +85,13 @@
 
 .project-card .project-image {
     max-width: 100%;
-    border-radius: 6px;
+    border-radius: 2px;
 }
 
 .project-install code {
     background-color: rgba(110, 118, 129, 0.15);
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 2px;
     padding: 4px 10px;
     font-size: 0.85rem;
     color: var(--link-color);
@@ -98,6 +105,15 @@
     margin-top: 16px;
 }
 
+.project-embed {
+    margin-bottom: 12px;
+}
+
+.projects-message {
+    margin: 0;
+    color: var(--secondary-text-color);
+}
+
 .project-links a {
     display: inline-flex;
     align-items: center;
@@ -107,9 +123,9 @@
     color: var(--primary-text-color);
     background-color: rgba(110, 118, 129, 0.1);
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 2px;
     text-decoration: none;
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    border-color: #8a97aa;
 }
 
 .project-links a:hover {
