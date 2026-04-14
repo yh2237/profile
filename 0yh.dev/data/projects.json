@@ -1,0 +1,164 @@
+{
+  "projects": [
+    {
+      "id": "adachi-db",
+      "title": "足立データベース",
+      "description": [
+        "足立レイのツイートが全てまとめられたサイト、及びAPIサーバー。足立レイのツイートをランダムで引けたり検索出来たりする。需要は不明。"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://adachi.2237yh.net/",
+          "icon": "simple-icons:googlechrome"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yh2237/AdachiDB",
+          "icon": "simple-icons:github"
+        }
+      ]
+    },
+    {
+      "id": "adacherei-nui",
+      "title": "AdachiRei-nui",
+      "image": {
+        "src": "img/adacherei-nui.png",
+        "alt": "AdachiRei-nui"
+      },
+      "description": [
+        "マインクラフトに足立レイのぬいぐるみを追加するMOD。",
+        "ローダーはFabric、1.21.6から1.21.11に対応。"
+      ],
+      "links": [
+        {
+          "label": "Modrinth",
+          "url": "https://modrinth.com/mod/adachirei-nui",
+          "icon": "simple-icons:modrinth"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yh2237/AdachiRei-nui",
+          "icon": "simple-icons:github"
+        }
+      ]
+    },
+    {
+      "id": "adachirei-bot",
+      "title": "足立レイ読み上げBot",
+      "description": [
+        "レプリボイス足立レイを使ってメッセージを読み上げるごくごく普通のDiscordBot。"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://adachi.0yh.dev",
+          "icon": "simple-icons:googlechrome"
+        }
+      ]
+    },
+    {
+      "id": "steve-badapple",
+      "title": "スティーブでBadAppleを再生",
+      "embed": {
+        "scriptSrc": "https://embed.nicovideo.jp/watch/sm45398011/script?w=640&h=360",
+        "fallbackUrl": "https://www.nicovideo.jp/watch/sm45398011",
+        "fallbackText": "スティーブでBadAppleを再生"
+      },
+      "description": [
+        "見ての通りスティーブでBadAppleを再生する動画。",
+        "ニコ動で2万再生されたりエンタメのランキングで1位になったりしてた。うれしい。"
+      ],
+      "links": [
+        {
+          "label": "ニコ動",
+          "url": "https://www.nicovideo.jp/watch/sm45398011",
+          "icon": "simple-icons:niconico"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=2CI1AKMBoWg",
+          "icon": "simple-icons:youtube"
+        }
+      ]
+    },
+    {
+      "id": "fdd-heat-anomaly",
+      "title": "FDDで熱異常を演奏",
+      "embed": {
+        "scriptSrc": "https://embed.nicovideo.jp/watch/sm45105577/script?w=640&h=360",
+        "fallbackUrl": "https://www.nicovideo.jp/watch/sm45105577",
+        "fallbackText": "FDDで熱異常を演奏"
+      },
+      "description": [
+        "これも見ての通りの動画。",
+        "8インチFDDのピンヘッダに関する情報があまりなくて苦労した。"
+      ],
+      "links": [
+        {
+          "label": "ニコ動",
+          "url": "https://www.nicovideo.jp/watch/sm45105577",
+          "icon": "simple-icons:niconico"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=2CI1AKMBoWg",
+          "icon": "simple-icons:youtube"
+        }
+      ]
+    },
+    {
+      "id": "reaper-badapple-drawing",
+      "title": "ReaperBadappleDrawing",
+      "embed": {
+        "scriptSrc": "https://embed.nicovideo.jp/watch/sm44343220/script?w=640&h=360",
+        "fallbackUrl": "https://www.nicovideo.jp/watch/sm44343220",
+        "fallbackText": "REAPERでBadApple!!を描画"
+      },
+      "description": [
+        "DAWソフトREAPERのタイムライン上に空のアイテムを使用して映像を描画するツール。需要は不明。"
+      ],
+      "links": [
+        {
+          "label": "ニコ動",
+          "url": "https://www.nicovideo.jp/watch/sm44343220",
+          "icon": "simple-icons:niconico"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=Cpo9RPN1bbQ",
+          "icon": "simple-icons:youtube"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yh2237/ReaperBadappleDrawing",
+          "icon": "simple-icons:github"
+        }
+      ]
+    },
+    {
+      "id": "editdb-cli",
+      "title": "EditDB-CLI",
+      "image": {
+        "src": "img/editdb-cli.gif",
+        "alt": "EditDB-CLI"
+      },
+      "description": [
+        "SQLiteデータベースをコマンドラインから作成、編集できる対話型のCLIツール。npmからインストール可能。"
+      ],
+      "installCommand": "npm install -g editdb-cli",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yh2237/EditDB-CLI",
+          "icon": "simple-icons:github"
+        },
+        {
+          "label": "npm",
+          "url": "https://www.npmjs.com/package/editdb-cli",
+          "icon": "simple-icons:npm"
+        }
+      ]
+    }
+  ]
+}

@@ -44,92 +44,11 @@
 
         <nav class="projects-toc">
             <h3>- Projects</h3>
-            <ul>
-                <li><a href="#adachi-db">足立データベース</a></li>
-                <li><a href="#adacherei-nui">AdachiRei-nui</a></li>
-                <li><a href="#steve-badapple">スティーブでBadAppleを再生</a></li>
-                <li><a href="#fdd-heat-anomaly">FDDで熱異常を演奏</a></li>
-                <li><a href="#reaper-badapple-drawing">ReaperBadappleDrawing</a></li>
-                <li><a href="#editdb-cli">EditDB-CLI</a></li>
-            </ul>
+            <ul id="projects-toc-list"></ul>
         </nav>
 
         <main class="projects-content">
-
-            <section class="project-card" id="adachi-db">
-                <h3>- 足立データベース</h3>
-                <p>
-                    足立レイのツイートが全てまとめられたサイト、及びAPIサーバー。足立レイのツイートをランダムで引けたり検索出来たりする。需要は不明。
-                </p>
-                <div class="project-links">
-                    <a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:googlechrome"></i> Website</a>
-                    <a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:github"></i> GitHub</a>
-                </div>
-            </section>
-
-            <section class="project-card" id="adacherei-nui">
-                <h3>- AdachiRei-nui</h3>
-                <img src="img/adacherei-nui.png" alt="AdachiRei-nui" class="project-image">
-                <p>
-                    マインクラフトに足立レイのぬいぐるみを追加するMOD。<br>
-                    ローダーはFabric、1.21.6から1.21.11に対応。
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/yh2237/AdachiRei-nui" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:github"></i> GitHub</a>
-                </div>
-            </section>
-
-            <section class="project-card" id="steve-badapple">
-                <h3>- スティーブでBadAppleを再生</h3>
-                <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm45398011/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm45398011">スティーブでBadAppleを再生</a></noscript>
-                <p>
-                    見ての通りスティーブでBadAppleを再生する動画。<br>
-                    ニコ動で2万再生されたりエンタメのランキングで1位になったりしてた。うれしい。
-                </p>
-                <div class="project-links">
-                    <a href="https://www.nicovideo.jp/watch/sm45398011" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:niconico"></i> ニコ動</a>
-                    <a href="https://www.youtube.com/watch?v=2CI1AKMBoWg" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:youtube"></i> YouTube</a>
-                </div>
-            </section>
-
-            <section class="project-card" id="fdd-heat-anomaly">
-                <h3>- FDDで熱異常を演奏</h3>
-                <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm45105577/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm45105577">FDDで熱異常を演奏</a></noscript>
-                <p>
-                    これも見ての通りの動画。<br>
-                    8インチFDDのピンヘッダに関する情報があまりなくて苦労した。
-                </p>
-                <div class="project-links">
-                    <a href="https://www.nicovideo.jp/watch/sm45105577" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:niconico"></i> ニコ動</a>
-                    <a href="https://www.youtube.com/watch?v=2CI1AKMBoWg" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:youtube"></i> YouTube</a>
-                </div>
-            </section>
-
-            <section class="project-card" id="reaper-badapple-drawing">
-                <h3>- ReaperBadappleDrawing</h3>
-                <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm44343220/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm44343220">REAPERでBadApple!!を描画</a></noscript>
-                <p>
-                    DAWソフトREAPERのタイムライン上に空のアイテムを使用して映像を描画するツール。需要は不明。
-                </p>
-                <div class="project-links">
-                    <a href="https://www.nicovideo.jp/watch/sm44343220" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:niconico"></i> ニコ動</a>
-                    <a href="https://www.youtube.com/watch?v=Cpo9RPN1bbQ" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:youtube"></i> YouTube</a>
-                    <a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:github"></i> GitHub</a>
-                </div>
-            </section>
-
-            <section class="project-card" id="editdb-cli">
-                <h3>- EditDB-CLI</h3>
-                <img src="img/editdb-cli.gif" alt="EditDB-CLI" class="project-image">
-                <p>
-                    SQLiteデータベースをコマンドラインから作成、編集できる対話型のCLIツール。npmからインストール可能。
-                </p>
-                <p class="project-install"><code>npm install -g editdb-cli</code></p>
-                <div class="project-links">
-                    <a href="https://github.com/yh2237/EditDB-CLI" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:github"></i> GitHub</a>
-                    <a href="https://www.npmjs.com/package/editdb-cli" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:npm"></i> npm</a>
-                </div>
-            </section>
+            <div id="projects-list"></div>
 
             <footer>
                 <a href="https://mechanicalgirl.jp/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" class="banner" height="32"></a>
@@ -141,6 +60,7 @@
     </div>
 
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script src="js/projects.js"></script>
 
 </body>
 
