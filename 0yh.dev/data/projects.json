@@ -44,7 +44,7 @@
       ]
     },
     {
-      "id": "adachirei-bot",
+      "id": "adachirei-voice-bot",
       "title": "足立レイ読み上げBot",
       "description": [
         "レプリボイス足立レイを使ってメッセージを読み上げるごくごく普通のDiscordBot。"
