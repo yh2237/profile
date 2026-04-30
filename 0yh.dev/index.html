@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0yh.dev - プロフィール</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
-<body>
+<body class="home">
 
-    <header>
-        <div class="banner-container">
-            <a href="https://0yh.dev/"><img src="img/banner2.png" alt="banner" class="banner" height="48"></a>
-        </div>
-        <div class="header-right">
-            <ul class="top-right-list" role="navigation" aria-label="Header actions">
-                <li><a href="/">TOP</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/status">サーバーステータス</a></li>
-                <li><a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-                <li><a href="/contact">お問い合わせ</a></li>
-            </ul>
-            <a href="https://mechanicalgirl.jp/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" class="banner" height="32"></a>
-            <button id="menuButton" class="menu-button mobile-only" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <a href="https://0yh.dev/" class="brand-mark">
+                    <img src="img/banner2.png" alt="0yh.dev" class="banner" height="40">
+                </a>
+            </div>
+            <nav class="header-nav" role="navigation" aria-label="Header navigation">
+                <a href="/">TOP</a>
+                <a href="/projects">Projects</a>
+                <a href="/status">Server Status</a>
+                <a href="/contact">Contact</a>
+                <a href="https://adachidb.net/" target="_blank">足立データベース</a>
+                <a href="https://adachi.0yh.dev" target="_blank">足立レイ読み上げBot</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" height="32"></a>
+                <button id="menuButton" class="menu-button mobile-only" aria-label="Menu"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </header>
 
@@ -33,9 +38,10 @@
         <ul>
             <li><a href="/">TOP</a></li>
             <li><a href="/projects">Projects</a></li>
-            <li><a href="/status">サーバーステータス</a></li>
-            <li><a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-            <li><a href="/contact">お問い合わせ</a></li>
+            <li><a href="/status">Server Status</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://adachidb.net/" target="_blank">足立データベース</a></li>
+            <li><a href="https://adachi.0yh.dev" target="_blank">足立レイ読み上げBot</a></li>
         </ul>
     </nav>
 
@@ -46,7 +52,10 @@
         <aside id="sidebar" class="sidebar">
             <div class="sidebar-header">
                 <img src="img/icon.png" alt="icon" class="sidebar-icon">
-                <h2>yh</h2>
+                <div>
+                    <h2>yh</h2>
+                    <p class="sidebar-subtitle">Yamagata, Japan</p>
+                </div>
             </div>
             <nav class="menu">
                 <a href="https://x.com/2237yh" target="_blank" rel="noopener noreferrer" class="menu-item x">
@@ -81,132 +90,118 @@
                     <i class="iconify" data-icon="simple-icons:discord"></i>
                     <span>Discord：yh2237</span>
                 </a>
-
-                <hr>
-
-                <div class="status-container" id="server-status-widget">
-                    <h1><a href="/status" class="server-status-index">- サーバーステータス</a></h1>
-                    <div class="status-item">
-                        <span class="label">CPU</span>
-                        <div class="bar"><div id="cpuBar" class="fill"></div></div>
-                        <span class="value" id="cpuValue">...</span>
-                    </div>
-
-                    <div class="status-item">
-                        <span class="label">RAM</span>
-                        <div class="bar"><div id="ramBar" class="fill"></div></div>
-                        <span class="value" id="ramValue">...</span>
-                    </div>
-
-                    <div class="status-item">
-                        <span class="label">NET</span>
-                        <div class="bar"><div id="netBar" class="fill"></div></div>
-                        <span class="value" id="netValue">...</span>
-                    </div>
-
-                    <div class="status-item">
-                        <span class="label">Disk I/O</span>
-                        <div class="bar"><div id="diskIoBar" class="fill"></div></div>
-                        <span class="value" id="diskIoValue">...</span>
-                    </div>
-                </div>
-
             </nav>
-        </aside>
-
-        <div class="content">
-            <div class="content-wrapper">
-                <div class="profile-container">
-                    <div class="github-readme">
-                        <span class="github-url"><a href="https://github.com/yh2237/yh2237">yh2237</a> / <a href="https://github.com/yh2237/yh2237/blob/main/README.md">README.md</a></span>
-                        <div id="profile-readme"></div>
-                    </div>
+            <div class="status-container" id="server-status-widget">
+                <h1><a href="/status" class="server-status-index">Server Status</a></h1>
+                <div class="status-item">
+                    <span class="label">CPU</span>
+                    <div class="bar"><div id="cpuBar" class="fill"></div></div>
+                    <span class="value" id="cpuValue">...</span>
                 </div>
 
-                <div class="container">
-                    <main>
-                        <section>
-                            <h3>- About Me</h3>
-                            <p>
-                                勘とノリでサーバーとプログラムをこねくり回してる人<br>
-                                山形で一番小さな町に住んでる<br>
-                                少女終末旅行と足立レイとまのさばが好き<br>
-                                <s>たまに音MADとかも作る</s><br>
-                            </p>
-                        </section>
-                        <hr>
-                        <section>
-                            <h3>- About Server</h3>
-                            <p>- メインノード</p>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-microchip"></i></span>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
-                                <li><span class="fa-li"><i class="fas fa-memory"></i></span>RAM：DDR4 48GB</li>
-                                <li><span class="fa-li"><i class="fas fa-hdd"></i></span>Storage：SATA SSD 1TB + HDD 2.5TB</li>
-                                <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>Network：2 × 1GbE Ethernet</li>
-                                <li><span class="fa-li"><i class="fas fa-server"></i></span>仮想基盤：Proxmox VE 8.3.0</li>
-                            </ul>
-                            <p>- A.I.VOICE Editor読み上げBot用サーバ</p>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-microchip"></i></span>CPU：I7 3770 / 4 cores, 8 threads</li>
-                                <li><span class="fa-li"><i class="fas fa-memory"></i></span>RAM：DDR3 16GB</li>
-                                <li><span class="fa-li"><i class="fas fa-hdd"></i></span>Storage：HDD 500GB</li>
-                                <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>Network：1GbE Ethernet</li>
-                                <li><span class="fa-li"><i class="fab fa-windows"></i></span>OS：Windows 10</li>
-                            </ul>
-                            <p>- このWebサーバのVM</p>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-microchip"></i></span>CPU：KVM64 4vCPU</li>
-                                <li><span class="fa-li"><i class="fas fa-memory"></i></span>RAM：4096 MB</li>
-                                <li><span class="fa-li"><i class="fas fa-hdd"></i></span>Storage：16GB</li>
-                                <li><span class="fa-li"><i class="fab fa-linux"></i></span>OS：Debian 13 （Headless）</li>
-                                <li><span class="fa-li"><i class="fas fa-globe"></i></span>WebServer：nginx 1.26.3</li>
-                            </ul>
-                            <p>- ネットワーク</p>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>Router：YAMAHA RTX1210</li>
-                                <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>L2 Switch：NEC QX-S616E</li>
-                                <li><span class="fa-li"><i class="fas fa-wifi"></i></span>AP：ELECOM WRC-1167GST2</li>
-                            </ul>
-                            <p>
-                                A.I.VOICE Editorが仮想環境で動作しないのと、Windowsでしか動かないのでかなりめんどくさい<br>
-                                Wine試してないけど動くのかな？
-                            </p>
-                            <p>
-                                APとして使ってるWRC-1167GST2はハードオフで新品1000円で売ってたやつ。APモードにして使用してる
-                            </p>
-                            <p>
-                                もう一つProxmoxのノード欲しいね。クラスタ組んでみたい
-                            </p>
-                        </section>
-                        <hr>
-                        <section>
-                            <h3>- My Projects</h3>
-                            <p>
-                                <a href="/projects" target="_blank" rel="noopener noreferrer">もっと見る</a>
-                            </p>
-                            <ul>
-                                <li><a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-                                <p>足立レイのツイートが全てまとめられたサイト、足立レイのツイートをランダムで引けたり検索出来たりする。需要は不明</p>
-                                <li><a href="https://github.com/yh2237/AdachiDB" target="_blank" rel="noopener noreferrer">AdachiDB</a></li>
-                                <p>足立データベースのソースコード</p>
-                                <li><a href="https://adachi.0yh.dev" target="_blank" rel="noopener noreferrer">足立レイ読み上げBot</a></li>
-                                <p>レプリボイス足立レイを使ってメッセージを読み上げるごくごく普通のDiscordBot</p>
-                                <li><a href="https://modrinth.com/mod/adachirei-nui" target="_blank" rel="noopener noreferrer">AdachiRei-nui</a></li>
-                                <p>マインクラフトに足立レイのぬいぐるみを追加するMOD</p>
-                                <li><a href="https://github.com/yh2237/ReaperBadappleDrawing" target="_blank" rel="noopener noreferrer">ReaperBadappleDrawing</a></li>
-                                <p>DAWソフトREAPERのタイムライン上に空のアイテムを使用して映像を描画するツール。需要は不明</p>
-                                <li><a href="https://github.com/yh2237/EditDB-CLI" target="_blank" rel="noopener noreferrer">EditDB-CLI</a> - npm install -g editdb-cli</li>
-                                <p>SQLiteデータベースをコマンドラインから作成、編集できるCLIツール。npmからインストール可能。需要は不明</p>
-                            </ul>
-                        </section>
-                    </main>
-                    <footer>
-                        <a href="https://mechanicalgirl.jp/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" class="banner" height="32"></a>
-                        <p>&copy; 2025 yh</p>
-                    </footer>
+                <div class="status-item">
+                    <span class="label">RAM</span>
+                    <div class="bar"><div id="ramBar" class="fill"></div></div>
+                    <span class="value" id="ramValue">...</span>
+                </div>
+
+                <div class="status-item">
+                    <span class="label">NET</span>
+                    <div class="bar"><div id="netBar" class="fill"></div></div>
+                    <span class="value" id="netValue">...</span>
+                </div>
+
+                <div class="status-item">
+                    <span class="label">Disk</span>
+                    <div class="bar"><div id="diskIoBar" class="fill"></div></div>
+                    <span class="value" id="diskIoValue">...</span>
                 </div>
             </div>
-        </div>
+        </aside>
+
+        <main class="content">
+            <section class="readme-section">
+                <div class="readme-header">
+                    <h2>README</h2>
+                    <span class="github-url"><a href="https://github.com/yh2237/yh2237">yh2237</a> / <a href="https://github.com/yh2237/yh2237/blob/main/README.md">README.md</a></span>
+                </div>
+                <div class="profile-container">
+                    <div class="github-readme" id="profile-readme"></div>
+                </div>
+            </section>
+
+            <section class="grid">
+                <article class="panel">
+                    <h2>About Me</h2>
+                    <p>勘とノリでサーバーとプログラムをこねくり回してる人。山形で一番小さな町に住んでる。少女終末旅行と足立レイとまのさばが好き。</p>
+                </article>
+                <article class="panel">
+                    <h2>About Server</h2>
+                    <p>
+                        A.I.VOICE Editorが仮想環境で動作しないのと、Windowsでしか動かないのでかなりめんどくさい<br>
+                        Wine試してないけど動くのかな？
+                    </p>
+                    <p>
+                        APとして使ってるWRC-1167GST2はハードオフで新品1000円で売ってたやつ。APモードにして使用してる
+                    </p>
+                    <p>
+                        それともう一つProxmoxのノード欲しいね。クラスタ組んでみたい
+                    </p>
+                    <h4>メインサーバー</h4>
+                    <ul class="plain-list">
+                        <li><i class="fas fa-microchip"></i> CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+                        <li><i class="fas fa-memory"></i> RAM：DDR4 48GB</li>
+                        <li><i class="fas fa-hdd"></i> Storage：SATA SSD 1TB + HDD 2.5TB</li>
+                        <li><i class="fas fa-network-wired"></i> Network：2 × 1GbE Ethernet</li>
+                        <li><i class="fas fa-server"></i> 仮想基盤：Proxmox VE 8.3.0</li>
+                    </ul>
+                    <h4>A.I.VOICE Editor読み上げBot用サーバー</h4>
+                    <ul class="plain-list">
+                        <li><i class="fas fa-microchip"></i> CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+                        <li><i class="fas fa-memory"></i> RAM：DDR4 48GB</li>
+                        <li><i class="fas fa-hdd"></i> Storage：SATA SSD 1TB + HDD 2.5TB</li>
+                        <li><i class="fas fa-network-wired"></i> Network：2 × 1GbE Ethernet</li>
+                        <li><i class="fab fa-windows"></i> OS：Windows 10</li>
+                    </ul>
+                    <h4>ネットワーク</h4>
+                    <ul class="plain-list">
+                        <li><i class="fas fa-network-wired"></i> Router：YAMAHA RTX1210</li>
+                        <li><i class="fas fa-network-wired"></i> L2 Switch：NEC QX-S616E</li>
+                        <li><i class="fas fa-wifi"></i> AP：ELECOM WRC-1167GST2</li>
+                    </ul>
+                    <h4>このWebサーバーのVM</h4>
+                    <ul class="plain-list">
+                        <li><i class="fas fa-microchip"></i> CPU：KVM64 4vCPU</li>
+                        <li><i class="fas fa-memory"></i> RAM：4096 MB</li>
+                        <li><i class="fas fa-hdd"></i> Storage：16GB</li>
+                        <li><i class="fab fa-linux"></i> OS：Debian 13（Headless）</li>
+                        <li><i class="fas fa-globe"></i> WebServer：nginx 1.26.3</li>
+                    </ul>
+                    <a href="/status" class="text-link">サーバーステータス</a>
+                </article>
+                <article class="panel">
+                    <h2>Projects</h2>
+                    <ul class="plain-list">
+                        <li><a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
+                        <li><a href="https://adachi.0yh.dev" target="_blank" rel="noopener noreferrer">足立レイ読み上げBot</a></li>
+                        <li><a href="https://modrinth.com/mod/adachirei-nui" target="_blank" rel="noopener noreferrer">AdachiRei-nui</a></li>
+                        <li><a href="/projects" target="_blank" rel="noopener noreferrer">もっと見る</a></li>
+                    </ul>
+                </article>
+            </section>
+
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="/">TOP</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/status">Server Status</a>
+                    <a href="/contact">Contact</a>
+                    <a href="https://adachidb.net/" target="_blank">足立データベース</a>
+                    <a href="https://adachi.0yh.dev" target="_blank">足立レイ読み上げBot</a>
+                </div>
+                <p>&copy; 2025 yh</p>
+            </footer>
+        </main>
 
     </div>
 
