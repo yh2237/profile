@@ -10,7 +10,7 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
-<body class="home">
+<body class="home font-loading">
 
     <header class="site-header">
         <div class="header-inner">
@@ -21,7 +21,6 @@
             </div>
             <nav class="header-nav" role="navigation" aria-label="Header navigation">
                 <a href="/">TOP</a>
-                <a href="/projects">Projects</a>
                 <a href="/status">Server Status</a>
                 <a href="/contact">Contact</a>
                 <a href="https://adachidb.net/" target="_blank">足立データベース</a>
@@ -29,7 +28,6 @@
             </nav>
             <div class="header-actions">
                 <a href="https://adachidb.net/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" height="32"></a>
-                <button id="menuButton" class="menu-button mobile-only" aria-label="Menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
@@ -37,7 +35,6 @@
     <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
         <ul>
             <li><a href="/">TOP</a></li>
-            <li><a href="/projects">Projects</a></li>
             <li><a href="/status">Server Status</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="https://adachidb.net/" target="_blank">足立データベース</a></li>
@@ -47,77 +44,18 @@
 
     <div class="page-wrapper">
 
-        <div id="overlay" class="overlay mobile-only"></div>
-
-        <aside id="sidebar" class="sidebar">
-            <div class="sidebar-header">
-                <img src="img/icon.png" alt="icon" class="sidebar-icon">
-                <div>
-                    <h2>yh</h2>
-                    <p class="sidebar-subtitle">Yamagata, Japan</p>
+        <div id="fontLoader" class="font-loader" role="status" aria-live="polite">
+            <div class="font-loader-inner">
+                <p class="font-loader-title">フォントを読み込み中</p>
+                <div class="font-loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div id="fontProgress" class="font-loader-fill"></div>
+                </div>
+                <div class="font-loader-meta">
+                    <span id="fontProgressText">0%</span>
+                    <button type="button" id="liteModeButton" class="font-loader-button">軽量ページを読み込む</button>
                 </div>
             </div>
-            <nav class="menu">
-                <a href="https://x.com/2237yh" target="_blank" rel="noopener noreferrer" class="menu-item x">
-                    <i class="iconify" data-icon="simple-icons:twitter"></i>
-                    <span>Twitter：@2237yh</span>
-                </a>
-                <a href="https://x.com/dev_0yh" target="_blank" rel="noopener noreferrer" class="menu-item x">
-                    <i class="iconify" data-icon="simple-icons:twitter"></i>
-                    <span>Twitter：@dev_0yh</span>
-                </a>
-                <a href="https://bsky.app/profile/0yh.dev" target="_blank" rel="noopener noreferrer" class="menu-item bluesky">
-                    <i class="iconify" data-icon="simple-icons:bluesky"></i>
-                    <span>Bluesky：@0yh.dev</span>
-                </a>
-                <a href="https://misskey.io/@0yh" target="_blank" rel="noopener noreferrer" class="menu-item misskeyio">
-                    <i class="iconify" data-icon="simple-icons:misskey"></i>
-                    <span>Misskey.io：@0yh</span>
-                </a>
-                <a href="https://github.com/yh2237" target="_blank" rel="noopener noreferrer" class="menu-item github">
-                    <i class="iconify" data-icon="simple-icons:github"></i>
-                    <span>GitHub：yh2237</span>
-                </a>
-                <a href="https://www.youtube.com/@2237yh" target="_blank" rel="noopener noreferrer" class="menu-item youtube">
-                    <i class="iconify" data-icon="simple-icons:youtube"></i>
-                    <span>YouTube：@2237yh</span>
-                </a>
-                <a href="https://www.nicovideo.jp/user/134118092" target="_blank" rel="noopener noreferrer" class="menu-item nicovideo">
-                    <i class="iconify" data-icon="simple-icons:niconico"></i>
-                    <span>ニコニコ動画</span>
-                </a>
-                <a href="#" class="menu-item discord">
-                    <i class="iconify" data-icon="simple-icons:discord"></i>
-                    <span>Discord：yh2237</span>
-                </a>
-            </nav>
-            <div class="status-container" id="server-status-widget">
-                <h1><a href="/status" class="server-status-index">Server Status</a></h1>
-                <div class="status-item">
-                    <span class="label">CPU</span>
-                    <div class="bar"><div id="cpuBar" class="fill"></div></div>
-                    <span class="value" id="cpuValue">...</span>
-                </div>
-
-                <div class="status-item">
-                    <span class="label">RAM</span>
-                    <div class="bar"><div id="ramBar" class="fill"></div></div>
-                    <span class="value" id="ramValue">...</span>
-                </div>
-
-                <div class="status-item">
-                    <span class="label">NET</span>
-                    <div class="bar"><div id="netBar" class="fill"></div></div>
-                    <span class="value" id="netValue">...</span>
-                </div>
-
-                <div class="status-item">
-                    <span class="label">Disk</span>
-                    <div class="bar"><div id="diskIoBar" class="fill"></div></div>
-                    <span class="value" id="diskIoValue">...</span>
-                </div>
-            </div>
-        </aside>
+        </div>
 
         <main class="content">
             <section>
@@ -134,7 +72,6 @@
             <footer class="site-footer">
                 <div class="footer-links">
                     <a href="/">TOP</a>
-                    <a href="/projects">Projects</a>
                     <a href="/status">Server Status</a>
                     <a href="/contact">Contact</a>
                     <a href="https://adachidb.net/" target="_blank">足立データベース</a>
@@ -146,8 +83,8 @@
     </div>
 
 <script src="js/status.js"></script>
-<script src="js/menu.js"></script>
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script src="js/font_loader.js"></script>
 
 </body>
 
