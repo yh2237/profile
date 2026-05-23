@@ -7,42 +7,43 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/favicon.png" type="image/png">
 </head>
+
 <body>
-    <header>
-        <div style="margin-top:0.5rem;">
-            <a href="https://0yh.dev"><img src="/img/banner2.png" alt="banner" class="banner" height="48"></a>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <a href="https://0yh.dev/" class="brand-mark">
+                    <img src="/img/banner2.png" alt="0yh.dev" class="banner" height="40">
+                </a>
+            </div>
+            <nav class="header-nav" role="navigation" aria-label="Header navigation">
+                <a href="/">TOP</a>
+                <a href="/projects">Projects</a>
+                <a href="/status">Server Status</a>
+                <a href="/contact">Contact</a>
+            </nav>
         </div>
-        <ul class="top-right-list" role="navigation" aria-label="Header actions">
-            <li><a href="/index.html">TOP</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/status.html">サーバーステータス</a></li>
-            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-            <li><a href="/contact.html">お問い合わせ</a></li>
-        </ul>
     </header>
 
-    <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-        <ul>
-            <li><a href="/index.html">TOP</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/status.html">サーバーステータス</a></li>
-            <li><a href="https://adachi.2237yh.net/" target="_blank" rel="noopener noreferrer">足立データベース</a></li>
-            <li><a href="/contact.html">お問い合わせ</a></li>
-        </ul>
-    </nav>
-
     <div class="page-wrapper">
-        <div class="content">
-            <div class="content-wrapper">
-                <div class="profile-container">
-                    <h1>500 Internal Server Error</h1>
-                    <p><a href="https://0yh.dev">ホームに戻る</a></p>
+        <main class="content">
+            <section class="error-card">
+                <h1>500 Internal Server Error</h1>
+                <p>サーバー側で問題が発生しました。</p>
+                <p><a href="https://0yh.dev">ホームに戻る</a></p>
+            </section>
+
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="/">TOP</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/status">Server Status</a>
+                    <a href="/contact">Contact</a>
                 </div>
-                <footer>
-                    <a href="https://mechanicalgirl.jp/" target="_blank" rel="noopener noreferrer"><img src="img/mechanicalgirls.png" alt="mechanicalgirls" class="banner" height="32"></a>
-                    <p>&copy; 2025 yh</p>
-                </footer>
-            </div>
-        </div>
+                <p>&copy; 2025 yh</p>
+            </footer>
+        </main>
     </div>
+</body>
+
 </html>
