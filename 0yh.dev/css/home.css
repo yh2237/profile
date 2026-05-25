@@ -331,6 +331,8 @@ header.site-header {
     flex: 0 0 40px;
     font-size: 0.8rem;
     color: var(--muted);
+    white-space: nowrap;
+    min-width: 48px;
 }
 
 .status-item .bar {
@@ -346,6 +348,7 @@ header.site-header {
     height: 100%;
     background: linear-gradient(90deg, var(--accent), #5fb6ff);
     width: 0%;
+    transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .status-item .value {
