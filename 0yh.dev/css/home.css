@@ -58,12 +58,12 @@ body.font-loading .site-footer {
 }
 
 body.lite-mode {
-    font-family: "Inter", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-family: "MS PMincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
     background-image: none;
 }
 
 body.lite-mode .github-readme {
-    font-family: "Inter", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-family: "MS PMincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
 }
 
 .font-loader {
