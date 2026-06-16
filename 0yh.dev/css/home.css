@@ -136,6 +136,12 @@ body:not(.font-loading) .font-loader {
     text-underline-offset: 2px;
 }
 
+.noscript-msg {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
 a {
     color: var(--accent);
     text-decoration: underline;
