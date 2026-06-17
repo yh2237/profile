@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API = "/api/status";
+    const API = "https://api.2237yh.net/api/status";
 
     const widget = document.getElementById('server-status-widget');
     if (!widget) {
