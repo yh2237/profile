@@ -1,0 +1,19 @@
+{
+  "name": "hono-static-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx dev.ts",
+    "start": "node --loader tsx dev.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "dotenv": "^17.4.2",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
