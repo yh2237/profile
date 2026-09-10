@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>0yh.dev | プロフィール</title>
+  <title>0yh.dev | About Server</title>
   <link rel="stylesheet" href="/css/home.css">
   <link rel="stylesheet" href="/css/linkbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -90,43 +90,49 @@
     </div>
 
     <main class="content">
-      <section class="readme-section" id="readme">
-        <div class="readme-header">
-          <h2>README</h2>
-          <span class="github-url"><a href="https://github.com/yh2237/yh2237">yh2237</a> / <a
-              href="https://github.com/yh2237/yh2237/blob/main/README.md">README.md</a></span>
-        </div>
-        <div class="profile-container">
-          <div class="github-readme" id="profile-readme"></div>
-        </div>
-      </section>
-      <hr>
       <section class="grid">
-        <article class="panel" id="about-me">
-          <h2>About Me</h2>
-          <p>山形で一番小さな町に住んでる。少女終末旅行と足立レイとまのさばが好き。</p>
-          <p>あと"0yh"の0に特殊な読み方があるわけじゃないです、無いものとして扱ってください。二文字のドメインなんて取れるわけ無いし数字入れたら安くなったからね。</p>
-        </article>
-        <hr>
-        <article class="panel" id="links">
-          <h2>Links</h2>
+        <article class="panel">
+          <h2>About Server</h2>
+          <h4>メインサーバー</h4>
           <ul class="plain-list">
-            <li><i class="iconify" data-icon="simple-icons:github"></i><a href="https://github.com/yh2237"
-                target="_blank" rel="noopener noreferrer">GitHub（yh2237）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:twitter"></i><a href="https://twitter.com/2237yh"
-                target="_blank" rel="noopener noreferrer">Twitter（@2237yh）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:twitter"></i><a href="https://twitter.com/dev_0yh"
-                target="_blank" rel="noopener noreferrer">Twitter（@dev_0yh）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:bluesky"></i><a href="https://bsky.app/profile/0yh.dev"
-                target="_blank" rel="noopener noreferrer">Bluesky（@0yh.dev）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:misskey"></i><a href="https://misskey.io/@0yh"
-                target="_blank" rel="noopener noreferrer">Misskey（@0yh）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:niconico"></i><a
-                href="https://www.nicovideo.jp/user/134118092" target="_blank"
-                rel="noopener noreferrer">ニコニコ動画（134118092）</a></li>
-            <li><i class="iconify" data-icon="simple-icons:youtube"></i><a href="https://www.youtube.com/@2237yh"
-                target="_blank" rel="noopener noreferrer">YouTube（@2237yh）</a></li>
+            <li><i class="fas fa-microchip"></i>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 48GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：SATA SSD 1TB + HDD 2.5TB</li>
+            <li><i class="fas fa-network-wired"></i>Network：2 × 1GbE Ethernet</li>
+            <li><i class="fas fa-server"></i>仮想基盤：Proxmox VE 8.3.0</li>
           </ul>
+          <h4>A.I.VOICE Editor用サーバー１</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：Core i7-3770 / 4 cores, 8 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 16GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：HDD 500GB</li>
+            <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
+            <li><i class="fab fa-windows"></i>OS：Windows 10</li>
+          </ul>
+          <h4>A.I.VOICE Editor用サーバー２</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：Core i5-3470 / 2 cores, 4 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 8GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：HDD 500GB</li>
+            <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
+            <li><i class="fab fa-windows"></i>OS：Windows 10</li>
+          </ul>
+          <h4>ネットワーク</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-network-wired"></i>Router：NEC IX2215</li>
+            <li><i class="fas fa-network-wired"></i>Router：YAMAHA RTX1210</li>
+            <li><i class="fas fa-network-wired"></i>L2 Switch：NEC QX-S616E</li>
+            <li><i class="fas fa-wifi"></i>AP：ELECOM WRC-1167GST2</li>
+          </ul>
+          <h4>このWebサーバーのVM</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：KVM64 4vCPU</li>
+            <li><i class="fas fa-memory"></i>RAM：4096 MB</li>
+            <li><i class="fas fa-hdd"></i>Storage：16GB</li>
+            <li><i class="fab fa-linux"></i>OS：Debian 13（Headless）</li>
+            <li><i class="fas fa-globe"></i>WebServer：nginx/1.30.1</li>
+          </ul>
+          <p><a href="/" class="text-link">トップに戻る</a></p>
         </article>
         <hr>
       </section>
@@ -145,12 +151,8 @@
 
   </div>
 
-  <script src="/js/status.js"></script>
-  <script src="/js/get_readme.js"></script>
   <script src="/js/font_loader.js"></script>
-
   <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </body>
 
