@@ -9,7 +9,7 @@ import 'dotenv/config'
 
 const app = new Hono()
 
-app.use('/*', serveStatic({ root: './' }))
+app.use('/*', serveStatic({ root: './public/' }))
 
 async function prettyError(c: Context, status: 404 | 500) {
     try {
@@ -40,5 +40,5 @@ const port = (() => {
 
 serve({ fetch: app.fetch, port }, (info) => {
     console.log(`Listening on http://localhost:${info.port}`)
-    console.log(`Directory: ${process.cwd()}`)
+    console.log(`Directory: ${process.cwd()}/public`)
 })
