@@ -1,0 +1,39 @@
+---
+title: サーバーステータス | yh.contact
+layout: layouts/base.njk
+scripts:
+  - /js/status.js
+  - /js/font_loader.js
+  - https://code.iconify.design/3/3.1.1/iconify.min.js
+---
+      <section class="grid">
+        <article class="panel">
+          <h2>Server Status</h2>
+          <div class="status-container" id="server-status-widget">
+            <div class="status-item">
+              <span class="label">CPU</span>
+              <div class="bar"><div id="cpuBar" class="fill"></div></div>
+              <span class="value" id="cpuValue">...</span>
+            </div>
+            <div class="status-item">
+              <span class="label">RAM</span>
+              <div class="bar"><div id="ramBar" class="fill"></div></div>
+              <span class="value" id="ramValue">...</span>
+            </div>
+            <div class="status-item">
+              <span class="label">NET</span>
+              <div class="bar"><div id="netBar" class="fill"></div></div>
+              <span class="value" id="netValue">...</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Disk</span>
+              <div class="bar"><div id="diskIoBar" class="fill"></div></div>
+              <span class="value" id="diskIoValue">...</span>
+            </div>
+          </div>
+        </article>
+        <p><a href="/" class="text-link">トップに戻る</a></p>
+        <hr>
+      </section>
+
+      {% include "partials/site-footer.njk" %}

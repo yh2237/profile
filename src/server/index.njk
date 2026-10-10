@@ -1,0 +1,48 @@
+---
+title: サーバー情報 | yh.contact
+layout: layouts/base.njk
+scripts:
+  - /js/font_loader.js
+  - https://code.iconify.design/3/3.1.1/iconify.min.js
+---
+      <section class="grid">
+        <article class="panel">
+          <h2>About Server</h2>
+          <p>そういえば最近NginxをやめてCloudflare Pagesに移行したんですよね。自分でホストする手間が無くなったから少し楽ではあるけど少し寂しい感じもする。</p>
+          <h4>メインサーバー</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 48GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：SATA SSD 1TB + HDD 2.5TB</li>
+            <li><i class="fas fa-network-wired"></i>Network：2 × 1GbE Ethernet</li>
+            <li><i class="fas fa-server"></i>仮想基盤：Proxmox VE 8.3.0</li>
+          </ul>
+          <h4>A.I.VOICE Editor用サーバー１</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：Core i7-3770 / 4 cores, 8 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 16GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：HDD 500GB</li>
+            <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
+            <li><i class="fab fa-windows"></i>OS：Windows 10</li>
+          </ul>
+          <h4>A.I.VOICE Editor用サーバー２</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-microchip"></i>CPU：Core i5-3470 / 2 cores, 4 threads</li>
+            <li><i class="fas fa-memory"></i>RAM：DDR4 8GB</li>
+            <li><i class="fas fa-hdd"></i>Storage：HDD 500GB</li>
+            <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
+            <li><i class="fab fa-windows"></i>OS：Windows 10</li>
+          </ul>
+          <h4>ネットワーク</h4>
+          <ul class="plain-list">
+            <li><i class="fas fa-network-wired"></i>Router：NEC IX2215</li>
+            <li><i class="fas fa-network-wired"></i>Router：YAMAHA RTX1210</li>
+            <li><i class="fas fa-network-wired"></i>L2 Switch：NEC QX-S616E</li>
+            <li><i class="fas fa-wifi"></i>AP：ELECOM WRC-1167GST2</li>
+          </ul>
+          <p><a href="/" class="text-link">トップに戻る</a></p>
+        </article>
+        <hr>
+      </section>
+
+      {% include "partials/site-footer.njk" %}

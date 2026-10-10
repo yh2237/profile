@@ -1,6 +1,8 @@
 node_modules/
 package-lock.json
 .env
+.cache/
+public/
 
 # package.json
 # dev.ts
