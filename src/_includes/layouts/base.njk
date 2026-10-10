@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/linkbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+
+<body class="home font-loading">
+
+  {% include "partials/site-header.njk" %}
+
+  {% include "partials/mobile-nav.njk" %}
+
+  <div class="page-wrapper">
+
+    {% include "partials/font-loader.njk" %}
+
+    <main class="content">
+{{ content | safe }}
+    </main>
+
+  </div>
+
+  {% for script in scripts %}
+  <script src="{{ script }}"></script>
+  {% endfor %}
+
+</body>
+
+</html>
