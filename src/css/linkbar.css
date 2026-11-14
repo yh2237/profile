@@ -3,13 +3,18 @@
     margin: 0;
 }
 
-.linkbar a {
+.linkbar a,
+.mobile-nav a {
     text-decoration: none;
 }
 
 .linkbar {
     display: flex;
     justify-content: center;
+}
+
+.linkbar,
+.mobile-nav {
     background-color: var(--accent);
 }
 
@@ -33,7 +38,8 @@
     text-align: center;
 }
 
-.dropmenu li a {
+.dropmenu li a,
+.mobile-nav a {
     display: block;
     margin: 0;
     padding: 15px 0 11px;
@@ -76,7 +82,9 @@
 }
 
 .dropmenu li:hover>a,
-.dropmenu li a:hover {
+.dropmenu li a:hover,
+.mobile-nav a:hover,
+.mobile-nav a:focus-visible {
     background: var(--accent-dark);
 }
 
@@ -84,7 +92,8 @@
     border-radius: 3px 3px 0 0;
 }
 
-.dropmenu li:hover ul li {
+.dropmenu li:hover ul li,
+.dropmenu li:focus-within ul li {
     overflow: visible;
     height: 38px;
 }

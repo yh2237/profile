@@ -25,7 +25,6 @@ export const linkbar = [
       { label: '足立データベース', href: 'https://adachidb.net/', external: true },
       { label: '足立レイ読み上げBot', href: 'https://bot.adachidb.net/', external: true },
       { label: 'UtauTTS', href: 'https://github.com/yh2237/UtauTTS', external: true },
-      { label: '一覧', href: '/projects' },
     ],
   },
   {
@@ -36,7 +35,6 @@ export const linkbar = [
       { label: 'TWITTER', href: 'https://twitter.com/2237yh', external: true },
       { label: 'GITHUB', href: 'https://github.com/yh2237', external: true },
       { label: 'BLUESKY', href: 'https://bsky.app/profile/0yh.dev', external: true },
-      { label: '一覧', href: '/contact' },
     ],
   },
 ]

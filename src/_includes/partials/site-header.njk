@@ -5,11 +5,8 @@
           <img src="https://cdn.2237yh.net/imgs/yh.contact.png" alt="yh.contact" class="banner" height="40">
         </a>
       </div>
-      <div class="header-actions">
-        <iframe src="https://github.com/sponsors/yh2237/button" title="Sponsor yh2237" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-      </div>
     </div>
-    <div class="linkbar">
+    <nav class="linkbar" aria-label="メインナビゲーション">
       <ul id="normal" class="dropmenu">
         {% for menu in site.linkbar %}
         <li><a href="{{ menu.href }}">{{ menu.label }}</a>
@@ -21,5 +18,5 @@
         </li>
         {% endfor %}
       </ul>
-    </div>
+    </nav>
   </header>

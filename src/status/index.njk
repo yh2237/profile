@@ -1,11 +1,12 @@
 ---
-title: サーバーステータス | yh.contact
+title: サーバーステータス
+description: yh（yh2237）のサーバーのCPU・メモリ・ネットワーク・ディスクの使用状況。
 layout: layouts/base.njk
 scripts:
   - /js/status.js
-  - /js/font_loader.js
   - https://code.iconify.design/3/3.1.1/iconify.min.js
 ---
+
       <section class="grid">
         <article class="panel">
           <h2>Server Status</h2>
@@ -31,9 +32,7 @@ scripts:
               <span class="value" id="diskIoValue">...</span>
             </div>
           </div>
+          <p><a href="/" class="text-link">トップに戻る</a></p>
         </article>
-        <p><a href="/" class="text-link">トップに戻る</a></p>
         <hr>
       </section>
-
-      {% include "partials/site-footer.njk" %}

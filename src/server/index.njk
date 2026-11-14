@@ -1,15 +1,16 @@
 ---
-title: サーバー情報 | yh.contact
+title: サーバー情報
+description: yh（yh2237）が運用しているサーバーとネットワークの構成。
 layout: layouts/base.njk
 scripts:
-  - /js/font_loader.js
   - https://code.iconify.design/3/3.1.1/iconify.min.js
 ---
+
       <section class="grid">
         <article class="panel">
           <h2>About Server</h2>
           <p>そういえば最近NginxをやめてCloudflare Pagesに移行したんですよね。自分でホストする手間が無くなったから少し楽ではあるけど少し寂しい感じもする。</p>
-          <h4>メインサーバー</h4>
+          <h3>メインサーバー</h3>
           <ul class="plain-list">
             <li><i class="fas fa-microchip"></i>CPU：Xeon E5-2690 V3 / 12 cores, 24 threads</li>
             <li><i class="fas fa-memory"></i>RAM：DDR4 48GB</li>
@@ -17,7 +18,7 @@ scripts:
             <li><i class="fas fa-network-wired"></i>Network：2 × 1GbE Ethernet</li>
             <li><i class="fas fa-server"></i>仮想基盤：Proxmox VE 8.3.0</li>
           </ul>
-          <h4>A.I.VOICE Editor用サーバー１</h4>
+          <h3>A.I.VOICE Editor用サーバー１</h3>
           <ul class="plain-list">
             <li><i class="fas fa-microchip"></i>CPU：Core i7-3770 / 4 cores, 8 threads</li>
             <li><i class="fas fa-memory"></i>RAM：DDR4 16GB</li>
@@ -25,7 +26,7 @@ scripts:
             <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
             <li><i class="fab fa-windows"></i>OS：Windows 10</li>
           </ul>
-          <h4>A.I.VOICE Editor用サーバー２</h4>
+          <h3>A.I.VOICE Editor用サーバー２</h3>
           <ul class="plain-list">
             <li><i class="fas fa-microchip"></i>CPU：Core i5-3470 / 2 cores, 4 threads</li>
             <li><i class="fas fa-memory"></i>RAM：DDR4 8GB</li>
@@ -33,7 +34,7 @@ scripts:
             <li><i class="fas fa-network-wired"></i>Network：1GbE Ethernet</li>
             <li><i class="fab fa-windows"></i>OS：Windows 10</li>
           </ul>
-          <h4>ネットワーク</h4>
+          <h3>ネットワーク</h3>
           <ul class="plain-list">
             <li><i class="fas fa-network-wired"></i>Router：NEC IX2215</li>
             <li><i class="fas fa-network-wired"></i>Router：YAMAHA RTX1210</li>
@@ -44,5 +45,3 @@ scripts:
         </article>
         <hr>
       </section>
-
-      {% include "partials/site-footer.njk" %}
