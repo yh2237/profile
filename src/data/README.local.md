@@ -1,5 +1,3 @@
-**I like making useless things**
-
 | ![Node.js](https://img.shields.io/badge/Node.js--5FA04E.svg?logo=node.js&style=plastic) <br> ![Go](https://img.shields.io/badge/Go--00ADD8.svg?logo=go&style=plastic) | ![Debian](https://img.shields.io/badge/Debian--A81D33.svg?logo=debian&style=plastic) <br> ![Proxmox VE](https://img.shields.io/badge/Proxmox_VE--E57000.svg?logo=proxmox&style=plastic) |
 | ---- | ---- |
 
