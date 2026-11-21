@@ -126,18 +126,6 @@ body:not(.font-loading) .font-loader {
     color: var(--muted);
 }
 
-.font-loader-button {
-    border: none;
-    background: transparent;
-    color: var(--text);
-    padding: 0;
-    font-size: 0.8rem;
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-}
-
 .noscript-msg {
     margin: 0;
     font-size: 0.85rem;

@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const loader = document.getElementById("fontLoader");
     const progress = document.getElementById("fontProgress");
     const progressText = document.getElementById("fontProgressText");
-    const liteButton = document.getElementById("liteModeButton");
 
-    if (!body || !loader || !progress || !progressText || !liteButton) {
+    if (!body || !loader || !progress || !progressText) {
         return;
     }
 
@@ -53,9 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(() => {
             finishLoading();
         });
-
-    liteButton.addEventListener("click", () => {
-        body.classList.add("lite-mode");
-        finishLoading();
-    });
 });
